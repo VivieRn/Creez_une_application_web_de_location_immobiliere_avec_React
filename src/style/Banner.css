@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.banner {
+  height: 150px;
+  width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner img {
+  width: 1160px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.banner p {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+}

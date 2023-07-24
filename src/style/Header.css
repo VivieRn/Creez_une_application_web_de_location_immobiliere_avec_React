@@ -1,0 +1,22 @@
+a,
+li {
+  text-decoration: none;
+  color: #ff6060;
+  list-style: none;
+  font-size: 25px;
+}
+.header {
+  text-align: right;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.links {
+  margin-right: 25px;
+}
