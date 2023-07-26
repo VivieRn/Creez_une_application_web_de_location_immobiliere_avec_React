@@ -86,7 +86,6 @@
 }
 
 .boxDetails3 li {
-  color: white;
   font-size: 1em;
 }
 
@@ -98,11 +97,8 @@
   align-items: flex-start;
   margin-right: 1em;
   margin-bottom: 3em;
-  padding-left: 1em;
-  padding-right: 1em;
   background-color: #ff6060;
   color: white;
-  border: #ff6060 1px solid;
   border-radius: 10px;
 }
 
@@ -111,9 +107,21 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  padding-left: 1em;
 }
 
 .Arrow {
   font-size: 2em;
-  align-items: flex-end;
+  margin-right: 1em;
+}
+
+.text {
+  width: 100%;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  border-radius: 0 0 10px 10px;
+}
+
+.text p {
+  margin: 1em;
 }

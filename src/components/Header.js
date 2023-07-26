@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/LOGO.svg";
 import "../style/Header.css";
 
@@ -8,10 +9,10 @@ function Header() {
       <nav>
         <ul className="nav-links">
           <li className="links">
-            <a href="/">Accueil</a>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="links">
-            <a href="/a_propos">A propos</a>
+            <Link to="/a-propos">A propos</Link>
           </li>
         </ul>
       </nav>

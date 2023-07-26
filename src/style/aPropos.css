@@ -1,0 +1,29 @@
+.container-aPropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.btn-aPropos {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.text-aPropos {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  border-radius: 0 0 10px 10px;
+}
+
+.text-aPropos p {
+  margin: 1em;
+}

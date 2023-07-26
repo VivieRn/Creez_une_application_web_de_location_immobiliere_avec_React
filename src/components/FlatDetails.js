@@ -50,7 +50,9 @@ function FlatDetails() {
               style={{ transform: showDescription ? "rotate(180deg)" : "none" }}
             />
           </div>
-          {showDescription && <p>{flat.description}</p>}
+          <div className="text">
+            {showDescription && <p>{flat.description}</p>}
+          </div>
         </div>
         <div
           onClick={() => setShowEquipment(!showEquipment)}
@@ -63,13 +65,15 @@ function FlatDetails() {
               style={{ transform: showEquipment ? "rotate(180deg)" : "none" }}
             />
           </div>
-          {showEquipment && (
-            <ul>
-              {flat.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
-              ))}
-            </ul>
-          )}
+          <div className="text">
+            {showEquipment && (
+              <ul>
+                {flat.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
     </div>
