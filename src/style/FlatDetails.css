@@ -64,9 +64,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 .host h2 {
-  width: 40%;
+  width: 50%;
 }
 .greyStar {
   color: grey;
@@ -81,4 +82,38 @@
   display: flex;
   width: 80%;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.boxDetails3 li {
+  color: white;
+  font-size: 1em;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #ff6060;
+  color: white;
+  border: #ff6060 1px solid;
+  border-radius: 10px;
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Arrow {
+  font-size: 2em;
+  align-items: flex-end;
 }
