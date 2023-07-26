@@ -1,0 +1,23 @@
+.error {
+  color: #ff6060;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h1 {
+  font-size: 10em;
+  margin: 0;
+}
+
+.error p {
+  font-size: 1.5em;
+}
+
+.error a {
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}

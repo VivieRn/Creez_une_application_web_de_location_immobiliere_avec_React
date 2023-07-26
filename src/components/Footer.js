@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer">
       <img src={logo2} alt="Kasa - Location appartements" />
-      <p>© 2020 Kasa. All rights reserved</p>
+      <p>© 2023 Kasa. All rights reserved</p>
     </div>
   );
 }

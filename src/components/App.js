@@ -4,7 +4,8 @@ import Banner from "./Banner.js";
 import Banner2 from "./Banner2.js";
 import { RentalList } from "./rentalList.js";
 import { FlatDetails } from "./FlatDetails.js";
-import APropos from "./aPropos";
+import About from "./About.js";
+import NotFound from "./NotFound.js";
 import Footer from "./Footer";
 import "../style/App.css";
 
@@ -16,10 +17,10 @@ function App() {
         <Routes>
           <Route path="/flat/:id" element={<FlatDetails />} />
           <Route
-            path="/a-propos"
+            path="/about"
             element={
               <>
-                <Banner2 />, <APropos />
+                <Banner2 />, <About />
               </>
             }
           />
@@ -32,6 +33,7 @@ function App() {
               </>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
