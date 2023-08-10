@@ -15,6 +15,8 @@ function FlatDetails() {
   let navigate = useNavigate();
   const flat = flatList.find((flat) => flat.id === id);
 
+  const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
+
   const [showDescription, setShowDescription] = useState(false);
   const [showEquipment, setShowEquipment] = useState(false);
 
@@ -23,32 +25,38 @@ function FlatDetails() {
     return null;
   }
 
-  const goToNextFlat = () => {
-    let nextFlatIndex =
-      (flatList.findIndex((flat) => flat.id === id) + 1) % flatList.length;
-    navigate("/flat/" + flatList[nextFlatIndex].id);
+  //Navigation au seins de la galerie photo de l'appartement cible
+  const goToNextPicture = () => {
+    let nextPictureIndex = (currentPictureIndex + 1) % flat.pictures.length;
+    setCurrentPictureIndex(nextPictureIndex);
   };
 
-  const goToPreviousFlat = () => {
-    let prevFlatIndex =
-      (flatList.findIndex((flat) => flat.id === id) - 1 + flatList.length) %
-      flatList.length;
-    navigate("/flat/" + flatList[prevFlatIndex].id);
+  const goToPreviousPicture = () => {
+    let prevPictureIndex = (currentPictureIndex - 1) % flat.pictures.length;
+    setCurrentPictureIndex(prevPictureIndex);
+    console.log("Move to prev");
   };
 
   return (
     <div className="flatDetails">
       <div className="imgContainer">
-        <MdKeyboardArrowLeft
-          onClick={goToPreviousFlat}
-          className="arrowNav arrowNavLeft"
+        {flat.pictures.length > !0 && (
+          <MdKeyboardArrowLeft
+            onClick={goToPreviousPicture}
+            className="arrowNav arrowNavLeft"
+          />
+        )}
+        <img
+          src={flat.pictures[currentPictureIndex]}
+          alt={flat.title}
+          className="flatImg"
         />
-        <img src={flat.cover} alt={flat.title} className="flatImg" />
-
-        <MdKeyboardArrowRight
-          onClick={goToNextFlat}
-          className="arrowNav arrowNavRight"
-        />
+        {flat.pictures.length > !0 && (
+          <MdKeyboardArrowRight
+            onClick={goToNextPicture}
+            className="arrowNav arrowNavRight"
+          />
+        )}
       </div>
       <div className="flatContainer">
         <div className="boxDetails">

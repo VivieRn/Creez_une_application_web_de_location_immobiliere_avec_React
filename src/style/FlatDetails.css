@@ -56,7 +56,7 @@
 }
 
 .boxDetails h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin-bottom: 0;
 }
 
@@ -137,6 +137,7 @@
   width: 100%;
   justify-content: space-between;
   padding-left: 1em;
+  cursor: pointer;
 }
 
 .Arrow {
