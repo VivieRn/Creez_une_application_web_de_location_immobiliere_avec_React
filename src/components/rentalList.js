@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { flatList } from "../data/logements.js";
 
-import "../style/rentalList.css";
+import "../style/rentalList.scss";
 
 //Affiche la liste des logements tiré des datas pour les affiché sur la page d'accueil
 function RentalList() {

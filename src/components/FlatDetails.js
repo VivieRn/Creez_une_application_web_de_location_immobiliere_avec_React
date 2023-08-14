@@ -8,7 +8,7 @@ import {
 } from "react-icons/md";
 import React, { useState } from "react";
 
-import "../style/FlatDetails.css";
+import "../style/FlatDetails.scss";
 
 //Affiche les détails d'un logement dans une page dédiée
 function FlatDetails() {

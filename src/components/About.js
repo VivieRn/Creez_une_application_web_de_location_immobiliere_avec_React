@@ -1,4 +1,4 @@
-import "../style/aPropos.css";
+import "../style/aPropos.scss";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import React, { useState } from "react";
 

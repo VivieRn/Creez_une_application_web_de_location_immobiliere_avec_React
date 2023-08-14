@@ -1,5 +1,5 @@
 import cover from "../assets/COVER.jpg";
-import "../style/Banner.css";
+import "../style/Banner.scss";
 
 //Banniere de la page d'accueil
 function Banner() {

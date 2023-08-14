@@ -7,7 +7,7 @@ import { FlatDetails } from "./FlatDetails.js";
 import About from "./About.js";
 import NotFound from "./NotFound.js";
 import Footer from "./Footer";
-import "../style/App.css";
+import "../style/App.scss";
 
 function App() {
   return (
