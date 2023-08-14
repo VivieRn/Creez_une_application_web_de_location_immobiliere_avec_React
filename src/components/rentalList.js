@@ -4,6 +4,7 @@ import { flatList } from "../data/logements.js";
 
 import "../style/rentalList.css";
 
+//Affiche la liste des logements tiré des datas pour les affiché sur la page d'accueil
 function RentalList() {
   return (
     <div className="RentalList">

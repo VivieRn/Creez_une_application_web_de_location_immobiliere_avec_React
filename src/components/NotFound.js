@@ -1,6 +1,7 @@
 import "../style/NotFound.css";
 import { Link } from "react-router-dom";
 
+//Affiche une page d'erreur si l'URL renseigné est inexistant
 function NotFound() {
   return (
     <div className="error">

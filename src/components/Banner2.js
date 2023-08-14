@@ -1,6 +1,7 @@
 import cover from "../assets/COVER2.jpg";
 import "../style/Banner.css";
 
+//Banniere de la page a propos
 function Banner2() {
   return (
     <div className="container">

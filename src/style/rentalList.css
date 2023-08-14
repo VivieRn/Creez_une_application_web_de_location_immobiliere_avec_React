@@ -20,9 +20,9 @@
   position: relative;
   border: solid 2px #ff6060;
   border-radius: 10px;
-  height: 400px;
-  width: 400px;
-  margin: 20px;
+  height: 17em;
+  width: 17em;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,4 +48,71 @@
   border-radius: 10px;
   margin-left: 5px;
   padding: 2px;
+}
+
+@media (max-width: 1400px) {
+  .flat-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query pour les écrans moyens */
+@media (max-width: 1024px) {
+  .flat-item {
+    height: 15em;
+    width: 15em;
+  }
+
+  .flat-item h2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 875px) {
+  .flat-item {
+    height: 12em;
+    width: 12em;
+  }
+
+  .flat-item h2 {
+    font-size: 10px;
+  }
+}
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+  .flat-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .flat-item {
+    height: 15em;
+    width: 15em;
+  }
+
+  .flat-item h2 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flat-item {
+    height: 12em;
+    width: 12em;
+  }
+
+  .flat-item h2 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .flat-item {
+    height: 10em;
+    width: 10em;
+  }
+
+  .flat-item h2 {
+    font-size: 8px;
+  }
 }

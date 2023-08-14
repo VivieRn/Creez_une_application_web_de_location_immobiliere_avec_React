@@ -10,6 +10,7 @@ import React, { useState } from "react";
 
 import "../style/FlatDetails.css";
 
+//Affiche les détails d'un logement dans une page dédiée
 function FlatDetails() {
   let { id } = useParams();
   let navigate = useNavigate();
