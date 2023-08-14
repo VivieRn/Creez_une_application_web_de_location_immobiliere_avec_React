@@ -33,7 +33,8 @@ function FlatDetails() {
   };
 
   const goToPreviousPicture = () => {
-    let prevPictureIndex = (currentPictureIndex - 1) % flat.pictures.length;
+    let prevPictureIndex =
+      (currentPictureIndex - 1 + flat.pictures.length) % flat.pictures.length;
     setCurrentPictureIndex(prevPictureIndex);
     console.log("Move to prev");
   };

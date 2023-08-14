@@ -17,7 +17,7 @@
   width: 80%;
   height: 600px;
   border-radius: 10px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .arrowNav {
@@ -180,6 +180,11 @@
     width: 80%;
   }
 
+  .imgContainer {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
   .flatImg {
     height: 400px;
   }
@@ -241,6 +246,11 @@
     font-size: 0.8em;
     width: 100px;
   }
+  .boxDetails2 img {
+    width: 50%;
+    height: 50%;
+    margin: 1em;
+  }
 }
 
 @media (max-width: 500px) {
@@ -251,17 +261,13 @@
 
 @media (max-width: 400px) {
   .tags {
-    width: 80px;
+    font-size: 0.6em;
+    width: 80%;
   }
 
   .host h2 {
     font-size: 20px;
     margin-right: 1em;
-  }
-
-  .boxDetails2 img {
-    width: 30%;
-    height: 30%;
   }
 
   .stars {
