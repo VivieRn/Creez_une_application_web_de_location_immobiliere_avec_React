@@ -30,6 +30,9 @@ a, li {
     @media (max-width: 400px) {
       font-size: 15px;
     }
+    @media (max-width: 330px) {
+      font-size: 12px;
+    }
     &:hover { /* Add this block */
       text-decoration: underline; /* Underline the link on hover */
     }
@@ -45,4 +48,10 @@ a, li {
   .header img {
     width: 30%;
   }
+
+@media (max-width: 400px) {
+  .header img {
+    width: 20%;
+  }
+}
 }
