@@ -153,10 +153,19 @@
     background-color: #f6f6f6;
     color: #ff6060;
     border-radius: 0 0 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
 
     p {
       margin: 1em;
     }
+
+  }
+  .text.open {
+    max-height: 500px;
   }
 
   // Media Queries
@@ -208,3 +217,15 @@
     .stars { font-size: 1.1em; }
   }
 }
+
+// Ajout des animations
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+

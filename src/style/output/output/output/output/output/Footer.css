@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+.footer img {
+  width: fit-content;
+  margin-top: 2em;
+}
+
+
+
+/*# sourceMappingURL=Footer.css.map */

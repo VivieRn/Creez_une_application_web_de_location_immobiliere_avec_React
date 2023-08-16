@@ -94,7 +94,7 @@ function FlatDetails() {
               style={{ transform: showDescription ? "rotate(180deg)" : "none" }}
             />
           </div>
-          <div className="text">
+          <div className={`text ${showDescription ? "open" : ""}`}>
             {showDescription && <p>{flat.description}</p>}
           </div>
         </div>
@@ -109,7 +109,7 @@ function FlatDetails() {
               style={{ transform: showEquipment ? "rotate(180deg)" : "none" }}
             />
           </div>
-          <div className="text">
+          <div className={`text ${showEquipment ? "open" : ""}`}>
             {showEquipment && (
               <ul>
                 {flat.equipments.map((equipment, index) => (

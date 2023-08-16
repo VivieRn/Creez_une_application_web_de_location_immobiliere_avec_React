@@ -132,9 +132,17 @@
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0 0 10px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 .flatDetails .text p {
   margin: 1em;
+}
+.flatDetails .text.open {
+  max-height: 500px;
 }
 @media (max-width: 1400px) {
   .flatDetails .flatImg {
@@ -230,6 +238,23 @@
   }
   .flatDetails .stars {
     font-size: 1.1em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

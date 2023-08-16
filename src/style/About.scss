@@ -30,15 +30,23 @@
 
   .Arrow {
     font-size: 4em;
+    transition: transform 0.3s ease;
   }
 
   .text-aPropos {
     background-color: #f6f6f6;
     color: #ff6060;
     border-radius: 0 0 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 
     p {
       margin: 1em;
     }
   }
+  .text-aPropos.open {
+    max-height: 500px;
+  }
 }
+

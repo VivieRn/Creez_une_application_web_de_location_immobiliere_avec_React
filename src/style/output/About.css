@@ -1,0 +1,47 @@
+.container-aPropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.container-aPropos .btn-aPropos {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.container-aPropos .Title {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-aPropos .Title h1 {
+  margin-left: 1em;
+}
+.container-aPropos .Arrow {
+  font-size: 4em;
+  transition: transform 0.3s ease;
+}
+.container-aPropos .text-aPropos {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  border-radius: 0 0 10px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+.container-aPropos .text-aPropos p {
+  margin: 1em;
+}
+.container-aPropos .text-aPropos.open {
+  max-height: 500px;
+}
+
+/*# sourceMappingURL=About.css.map */
