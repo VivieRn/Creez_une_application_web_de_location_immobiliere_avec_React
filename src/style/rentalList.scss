@@ -18,7 +18,8 @@
 
 .flat-item {
   position: relative;
-  border: solid 2px #ff6060;
+  background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3));
+  background-color: #ff6060;
   border-radius: 10px;
   height: 17em;
   width: 17em;
@@ -41,10 +42,9 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  font-size: 13px;
+  width: 33%;
+  font-size: 15px;
   color: white;
-  background-color: #ff6060;
-  border: solid 2px #ff6060;
   border-radius: 10px;
   margin-left: 5px;
   padding: 2px;

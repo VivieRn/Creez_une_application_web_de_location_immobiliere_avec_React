@@ -2,7 +2,7 @@ import "../style/About.scss";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import React, { useState } from "react";
 
-function APropos() {
+function About() {
   const [descriptions, setDescriptions] = useState({
     1: false,
     2: false,
@@ -52,4 +52,4 @@ function APropos() {
   );
 }
 
-export default APropos;
+export default About;

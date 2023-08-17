@@ -12,7 +12,6 @@ function RentalList() {
         {flatList.map((flat) => (
           <Link to={`/flat/${flat.id}`} key={flat.id}>
             <li className="flat-item">
-              <img src={flat.cover} alt={flat.title} />
               <h2>{flat.title}</h2>
             </li>
           </Link>
