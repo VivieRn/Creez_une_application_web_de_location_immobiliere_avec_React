@@ -6,7 +6,7 @@ import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
 } from "react-icons/md";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "../style/FlatDetails.scss";
 
@@ -21,10 +21,14 @@ function FlatDetails() {
   const [showDescription, setShowDescription] = useState(false);
   const [showEquipment, setShowEquipment] = useState(false);
 
-  if (!flat) {
-    navigate("/not-found", { replace: true });
-    return null;
-  }
+  //Renvoie sur la page d'erreur si aucun appartement n'est trouvé
+  useEffect(() => {
+    if (!flat) {
+      navigate("/not-found", { replace: true });
+    }
+  }, [flat, navigate]);
+
+  if (!flat) return null;
 
   //Navigation au seins de la galerie photo de l'appartement cible
   const goToNextPicture = () => {
