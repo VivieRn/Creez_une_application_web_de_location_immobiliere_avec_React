@@ -2,8 +2,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import { flatList } from "../data/logements.js";
 import React, { useEffect, useState } from "react";
 import Gallery from "./Gallery";
-import Rating from "./Rating";
-import CollapsibleBox from "./CollapsibleBox";
+import FlatHeader from "./FlatHeader.js";
+import HostAndRating from "./HostAndRating.js";
+import InformationBox from "./InformationBox.js";
 
 import "../style/FlatDetails.scss";
 
@@ -27,30 +28,21 @@ function FlatDetails() {
     <div className="flatDetails">
       <Gallery pictures={flat.pictures} title={flat.title} />
       <div className="flatContainer">
-        <div className="boxDetails">
-          <h1>{flat.title}</h1>
-          <p>{flat.location}</p>
-          <ul className="tagsList">
-            {flat.tags.map((tag, index) => (
-              <li key={index} className="tags">
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="boxDetails2">
-          <div className="host">
-            <h2>{flat.host.name}</h2>
-            <img src={flat.host.picture} alt={flat.host.name} />
-          </div>
-          <div className="stars">
-            <Rating value={flat.rating} />
-          </div>
-        </div>
+        {/* FlatHeader Component */}
+        <FlatHeader
+          title={flat.title}
+          location={flat.location}
+          tags={flat.tags}
+        />
+
+        {/* HostAndRating Component */}
+        <HostAndRating host={flat.host} rating={flat.rating} />
       </div>
+
       <div className="boxDetails3">
-        <CollapsibleBox
-          title={<h3 className="Title">Description</h3>}
+        {/* InformationBox for Description */}
+        <InformationBox
+          title="Description"
           content={
             <div className={`text ${showDescription ? "open" : ""}`}>
               <p>{flat.description}</p>
@@ -58,10 +50,11 @@ function FlatDetails() {
           }
           isOpen={showDescription}
           toggleOpen={() => setShowDescription(!showDescription)}
-          className="button"
         />
-        <CollapsibleBox
-          title={<h3 className="Title">Equipment</h3>}
+
+        {/* InformationBox for Equipment */}
+        <InformationBox
+          title="Equipment"
           content={flat.equipments.map((equipment, index) => (
             <React.Fragment key={index}>
               <p>{equipment}</p>
@@ -69,7 +62,6 @@ function FlatDetails() {
           ))}
           isOpen={showEquipment}
           toggleOpen={() => setShowEquipment(!showEquipment)}
-          className="button"
           contentClassName={`equipements ${showEquipment ? "open" : ""}`}
         />
       </div>

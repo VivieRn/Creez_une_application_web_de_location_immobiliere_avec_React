@@ -9,6 +9,7 @@ import NotFound from "./NotFound.js";
 import Footer from "./Footer";
 import "../style/App.scss";
 
+//Logique des routes et des éléments qui y sont liés
 function App() {
   return (
     <Router>
