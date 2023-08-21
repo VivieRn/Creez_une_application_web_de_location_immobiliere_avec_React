@@ -7,9 +7,7 @@
   .btn-aPropos {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 80%;
     margin-bottom: 2em;
     background-color: #ff6060;
     color: white;
@@ -19,21 +17,22 @@
 
   .Title {
     display: flex; 
-    width: 98%;
     justify-content: space-between; 
+    width: 100%;
     align-items: center;
-
-    h1 {
-      margin-left: 1em;
-    }
+    margin-left: 1em;
   }
 
   .Arrow {
     font-size: 4em;
     transition: transform 0.3s ease;
+    margin-right: 10px;
   }
 
   .text-aPropos {
+    display: flex;
+    align-items: center;
+    width: 100%;
     background-color: #f6f6f6;
     color: #ff6060;
     border-radius: 0 0 10px 10px;
@@ -42,11 +41,10 @@
     transition: max-height 0.5s ease-in-out;
 
     p {
-      margin: 1em;
+      padding: 1em;
     }
-  }
-  .text-aPropos.open {
-    max-height: 500px;
-  }
 }
-
+.text-aPropos.open {
+  max-height: 500px;
+}
+}

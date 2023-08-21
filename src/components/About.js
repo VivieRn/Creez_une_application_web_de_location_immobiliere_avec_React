@@ -1,6 +1,6 @@
 import "../style/About.scss";
-import { MdKeyboardArrowUp } from "react-icons/md";
 import React, { useState } from "react";
+import CollapsibleBox from "./CollapsibleBox";
 
 function About() {
   const [descriptions, setDescriptions] = useState({
@@ -27,26 +27,24 @@ function About() {
   return (
     <div className="container-aPropos">
       {Object.keys(titles).map((key) => (
-        <div
+        <CollapsibleBox
           key={key}
-          onClick={() =>
+          title={
+            <div className="Title">
+              <h1>{titles[key]}</h1>
+            </div>
+          }
+          content={
+            <div className={`text-aPropos ${descriptions[key] ? "open" : ""}`}>
+              <p className="">{texts[key]}</p>
+            </div>
+          }
+          isOpen={descriptions[key]}
+          toggleOpen={() =>
             setDescriptions((prev) => ({ ...prev, [key]: !prev[key] }))
           }
           className="btn-aPropos"
-        >
-          <div className="Title">
-            <h1>{titles[key]}</h1>
-            <MdKeyboardArrowUp
-              className="Arrow"
-              style={{
-                transform: descriptions[key] ? "rotate(180deg)" : "none",
-              }}
-            />
-          </div>
-          <div className={`text-aPropos ${descriptions[key] ? "open" : ""}`}>
-            {descriptions[key] && <p>{texts[key]}</p>}
-          </div>
-        </div>
+        />
       ))}
     </div>
   );
