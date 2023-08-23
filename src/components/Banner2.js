@@ -7,6 +7,7 @@ function Banner2() {
     <div className="container">
       <div className="banner">
         <img src={cover} alt="Kasa - Location appartements" />
+        <p></p>
       </div>
     </div>
   );
