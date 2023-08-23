@@ -44,4 +44,16 @@
       }
     }
   }
+  @media (max-width: 400px) {
+    .banner {
+      p {
+        font-size: 1.2em;
+        height: 100px;
+      }
+
+      img {
+        height: 100px;
+      }
+    }
+  }
 }
