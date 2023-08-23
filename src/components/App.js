@@ -16,21 +16,21 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/flat/:id" element={<FlatDetails />} />
-          <Route
-            path="/about"
-            element={
-              <>
-                <Banner2 />, <About />
-              </>
-            }
-          />
           <Route
             path="/"
             element={
               <>
                 <Banner />
                 <RentalList />
+              </>
+            }
+          />
+          <Route path="/flat/:id" element={<FlatDetails />} />
+          <Route
+            path="/about"
+            element={
+              <>
+                <Banner2 />, <About />
               </>
             }
           />
