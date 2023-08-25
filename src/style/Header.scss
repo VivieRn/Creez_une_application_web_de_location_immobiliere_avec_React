@@ -15,7 +15,7 @@ a, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 89%;
+  width: 80%;
   margin-bottom: 1em;
   margin-top: 1em;
 
@@ -32,14 +32,14 @@ a, li {
 
   a {
     @media (max-width: 768px) {
-      font-size: 20px;
+      font-size: 15px;
     }
 
     @media (max-width: 400px) {
-      font-size: 15px;
+      font-size: 12px;
     }
     @media (max-width: 330px) {
-      font-size: 12px;
+      font-size: 10px;
     }
     &:hover { /* Add this block */
       text-decoration: underline; /* Underline the link on hover */
@@ -54,12 +54,6 @@ a, li {
 /* Media Query pour les petits écrans */
 @media (max-width: 768px) {
   .header img {
-    width: 30%;
+    width: 40%;
   }
-
-@media (max-width: 400px) {
-  .header img {
-    width: 20%;
-  }
-}
 }

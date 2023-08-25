@@ -13,7 +13,7 @@
   }
 
   .flatImg {
-    width: 89%;
+    width: 80%;
     height: 600px;
     border-radius: 10px;
     margin-bottom: 1em;
@@ -33,17 +33,17 @@
     cursor: pointer;
 
     &Left {
-      left: 5%;
+      left: 10%;
     }
 
     &Right {
-      right: 5%;
+      right: 10%;
     }
   }
 
   .flatContainer {
     display: flex;
-    width: 89%;
+    width: 80%;
     justify-content: space-between;
   }
 
@@ -115,7 +115,7 @@
 
   .boxDetails3 {
     display: flex;
-    width: 89%;
+    width: 80%;
     justify-content: space-between;
     align-items: flex-start;
     margin-left: auto;
