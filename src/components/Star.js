@@ -1,8 +1,8 @@
 import React from "react";
-import { FaStar, FaRegStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 function Star({ filled }) {
-  return filled ? <FaStar /> : <FaRegStar className="greyStar" />;
+  return filled ? <FaStar /> : <FaStar className="greyStar" />;
 }
 
 export default Star;

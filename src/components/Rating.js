@@ -3,7 +3,7 @@ import Star from "./Star";
 
 function Rating({ value }) {
   return (
-    <div>
+    <div className="stars">
       {[...Array(5)].map((_, i) => (
         <Star key={i} filled={i < value} />
       ))}

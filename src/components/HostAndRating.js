@@ -7,9 +7,7 @@ function HostAndRating({ host, rating }) {
         <h2>{host.name}</h2>
         <img src={host.picture} alt={host.name} />
       </div>
-      <div className="stars">
-        <Rating value={rating} />
-      </div>
+      <Rating value={rating} />
     </div>
   );
 }
