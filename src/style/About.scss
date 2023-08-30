@@ -49,3 +49,8 @@
   max-height: 500px;
 }
 }
+@media (max-width: 400px) {
+  .btn-aPropos h1 {
+    font-size: 1.5em;
+  }
+}

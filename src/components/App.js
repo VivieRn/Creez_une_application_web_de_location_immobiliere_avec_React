@@ -30,7 +30,8 @@ function App() {
             path="/about"
             element={
               <>
-                <Banner2 />, <About />
+                <Banner2 />
+                <About />
               </>
             }
           />

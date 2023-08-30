@@ -58,4 +58,17 @@
       }
     }
   }
+  @media (max-width: 300px) {
+    .banner {
+      height: 80px;
+      p {
+        font-size: 1em;
+        height: 80px;
+      }
+
+      img {
+        height: 80px;
+      }
+    }
+  }
 }
