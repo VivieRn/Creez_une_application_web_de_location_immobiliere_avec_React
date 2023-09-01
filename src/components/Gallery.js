@@ -23,6 +23,11 @@ function Gallery({ pictures, title }) {
         alt={title}
         className="flatImg"
       />
+      {pictures.length > 1 && (
+        <div className="imageCounter">
+          {currentPictureIndex + 1} / {pictures.length}
+        </div>
+      )}
       {pictures.length > !0 && (
         <MdKeyboardArrowRight
           onClick={() =>
