@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path="/"
+            path="/kasa_React/"
             element={
               <>
                 <Banner />
