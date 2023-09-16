@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path="/Kasa_React/"
+            path="/"
             element={
               <>
                 <Banner />
@@ -35,7 +35,7 @@ function App() {
               </>
             }
           />
-          <Route path="/*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
