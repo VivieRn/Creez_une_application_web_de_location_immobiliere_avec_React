@@ -11,7 +11,7 @@ function RentalList() {
       <div className="ctn-flat-list">
         <ul className="flat-list">
           {flatList.map((flat) => (
-            <Link to={`/flat/${flat.id}`} key={flat.id}>
+            <Link to={`/Kasa_React/flat/${flat.id}`} key={flat.id}>
               <li className="flat-item">
                 <h2>{flat.title}</h2>
               </li>
