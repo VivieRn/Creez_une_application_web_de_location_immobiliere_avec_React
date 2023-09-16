@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kasa_React/static/css/main.f9e6f084.css",
-    "main.js": "/Kasa_React/static/js/main.a802f60e.js",
+    "main.js": "/Kasa_React/static/js/main.39dd479a.js",
     "static/js/787.9627d15d.chunk.js": "/Kasa_React/static/js/787.9627d15d.chunk.js",
     "static/media/COVER2.jpg": "/Kasa_React/static/media/COVER2.e54ae93d36cfba861b65.jpg",
     "static/media/COVER.jpg": "/Kasa_React/static/media/COVER.61352a7ae7ebff30e925.jpg",
@@ -9,11 +9,11 @@
     "static/media/LOGO2.svg": "/Kasa_React/static/media/LOGO2.a086396b9b1d7772a42fc136910f196e.svg",
     "index.html": "/Kasa_React/index.html",
     "main.f9e6f084.css.map": "/Kasa_React/static/css/main.f9e6f084.css.map",
-    "main.a802f60e.js.map": "/Kasa_React/static/js/main.a802f60e.js.map",
+    "main.39dd479a.js.map": "/Kasa_React/static/js/main.39dd479a.js.map",
     "787.9627d15d.chunk.js.map": "/Kasa_React/static/js/787.9627d15d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9e6f084.css",
-    "static/js/main.a802f60e.js"
+    "static/js/main.39dd479a.js"
   ]
 }
