@@ -6,7 +6,7 @@ function NotFound() {
     <div className="error">
       <h1>404</h1>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <Link to="/">Retourner vers la page d'accueil.</Link>
+      <Link to="/kasa_React/">Retourner vers la page d'accueil.</Link>
     </div>
   );
 }
