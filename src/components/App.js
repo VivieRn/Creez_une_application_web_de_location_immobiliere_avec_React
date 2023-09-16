@@ -25,9 +25,9 @@ function App() {
               </>
             }
           />
-          <Route path="/Kasa-React/flat/:id" element={<FlatDetails />} />
+          <Route path="/flat/:id" element={<FlatDetails />} />
           <Route
-            path="/Kasa-React/about"
+            path="/about"
             element={
               <>
                 <Banner2 />
@@ -35,7 +35,7 @@ function App() {
               </>
             }
           />
-          <Route path="/Kasa-React/*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
