@@ -35,7 +35,7 @@ function App() {
               </>
             }
           />
-          <Route path="/kasa_React/*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
