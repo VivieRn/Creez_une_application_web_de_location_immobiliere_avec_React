@@ -10,7 +10,7 @@ function Header() {
         <nav>
           <ul className="nav-links">
             <li className="links">
-              <Link to="/Kasa_React/">Accueil</Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li className="links">
               <Link to="/about">A propos</Link>
